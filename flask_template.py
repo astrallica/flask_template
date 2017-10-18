@@ -2,6 +2,7 @@ from flask import Flask
 from common.mods import api, db
 from common.api_errors import errors
 from resources.test_api import TestApi
+from resources.hello_api import HelloApi
 
 app = Flask(__name__)
 
@@ -13,6 +14,7 @@ def hello_world():
 
 def register_apis():
     api.add_resource(TestApi, "/test/<int:topic_id>", "/test")
+    api.add_resource(HelloApi, "/hello")
 
 
 app.config.from_pyfile("configs.py")
