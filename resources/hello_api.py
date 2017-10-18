@@ -13,6 +13,5 @@ KEY_NAME = "name"
 
 
 class HelloApi(Resource):
-    @marshal_with(test_fields)
     def get(self):
         return "hello!!!"
