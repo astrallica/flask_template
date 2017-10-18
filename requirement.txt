@@ -1,0 +1,12 @@
+flask
+flask-sqlalchemy
+flask-restful
+flask-testing
+sqlalchemy
+pymysql
+flask-login
+flask-bcrypt
+celery
+Pillow
+requests
+arrow
